@@ -40,7 +40,7 @@ export default function Hero() {
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="hero-title mb-6 max-w-2xl"
               >
-                Whering | <span className="text-[#B88300]">Reframing a Digital Wardrobe</span>
+                Whering | <span className="text-white">Reframing a Digital Wardrobe</span>
               </motion.h1>
 
               <motion.p
