@@ -7,7 +7,7 @@ const FIGMA_URL = "#";
 
 const stats = [
   { label: "Role", value: "Product Designer" },
-  { label: "Duration", value: "3 days" },
+  { label: "Duration", value: "5 days" },
   { label: "Scope", value: "Solo redesign study" },
 ];
 
@@ -19,7 +19,7 @@ export default function Hero() {
         <div 
           className="rounded-[32px] relative overflow-hidden border border-black/5 shadow-sm p-8 md:p-16 lg:p-24"
           style={{ 
-            backgroundImage: "linear-gradient(114.58deg, #D1E9FF -1.34%, rgba(255, 222, 253, 0.56) 24.05%, #F7F7F7 74.82%)" 
+            backgroundImage: "linear-gradient(114.58deg, #FFF2C6 -1.34%, rgba(255, 229, 153, 0.56) 24.05%, #F7F7F7 74.82%)" 
           }}
         >
           <div className="grid items-center gap-12 lg:grid-cols-[1fr_320px] lg:gap-16 relative z-10">
@@ -41,7 +41,7 @@ export default function Hero() {
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="hero-title mb-6 max-w-2xl"
               >
-                Whering | <span className="text-plum">Reframing a Digital Wardrobe</span>
+                Whering | <span className="text-[#B88300]">Reframing a Digital Wardrobe</span>
               </motion.h1>
 
               <motion.p
@@ -80,16 +80,16 @@ export default function Hero() {
                 className="flex flex-wrap gap-4"
               >
                 <a
-                  href="#overview"
+                  href="#designs"
                   className="cursor-pointer bg-[#1F1F1F] px-8 py-3.5 rounded-full text-[15px] font-bold text-white no-underline transition-all hover:bg-[#0a0a0a] shadow-md hover:shadow-lg"
                 >
-                  Read Case Study
+                  Use Prototype
                 </a>
                 <a
-                  href="#designs"
+                  href="#overview"
                   className="cursor-pointer border border-[#E8E5E6] bg-white px-8 py-3.5 rounded-full text-[15px] font-bold text-[#1F1F1F] no-underline transition-all hover:border-[#1F1F1F] shadow-sm"
                 >
-                  View Screens
+                  Read Case Study
                 </a>
               </motion.div>
             </div>
