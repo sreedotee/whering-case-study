@@ -34,7 +34,6 @@ const ThreeModes            = load("ThreeModes");
 const ModeDecisions         = load("ModeDecisions");
 
 // Design
-const RedesignDirection     = load("RedesignDirection");
 const DesignLanguage        = load("DesignLanguage");
 const InformationArchitecture = load("InformationArchitecture");
 const ProductPrinciples     = load("ProductPrinciples");
@@ -178,7 +177,6 @@ export default function Home() {
         <ThreeModes />
 
         {/* ── Design ── */}
-        <RedesignDirection />
         <DesignLanguage />
         <InformationArchitecture />
         <ProductPrinciples />
