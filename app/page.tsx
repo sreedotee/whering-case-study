@@ -4,7 +4,6 @@ import dynamic from 'next/dynamic';
 import Hero from "@/components/Hero";
 import SessionSignal from "@/components/SessionSignal";
 import SectionTimeline from "@/components/SectionTimeline";
-import SectionHeader from "@/components/SectionHeader";
 
 const load = (path: string) => dynamic(() => import(`@/components/sections/${path}`), { loading: () => null });
 
@@ -54,19 +53,6 @@ export default function Home() {
         <DesignLanguage />
         <InformationArchitecture />
         <ProductPrinciples />
-        <div id="designs" />
-        <section className="py-10 bg-white">
-          <div className="container-standard">
-            <SectionHeader number="05" title="Prototype Screens" subtitle="Annotated reference sheet" />
-            <div className="rounded-[28px] border border-black/5 bg-[#FAFAF8] p-4 shadow-sm">
-              <img
-                src="/assets/images/5-competing-actions-crop.png"
-                alt="Annotated prototype screen"
-                className="w-full rounded-[22px] object-contain"
-              />
-            </div>
-          </div>
-        </section>
         <BrandPreservation />
         <Monetization />
         <Reflection />
