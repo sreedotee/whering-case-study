@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import Hero from "@/components/Hero";
+import SessionSignal from "@/components/SessionSignal";
 import SectionTimeline from "@/components/SectionTimeline";
 import Footer from "@/components/Footer";
 
@@ -69,7 +70,7 @@ export default function Home() {
       scrollable: true,
     },
     {
-      title: "Studio",
+      title: "Canvas",
       caption: "Try-on canvas as the main creation surface",
       bg: "linear-gradient(135deg, #4a3560 0%, #6b3fa0 100%)",
       icon: "floppy-disk",
@@ -156,32 +157,25 @@ export default function Home() {
     <main className="bg-white min-h-screen lg:ml-[260px]">
       <SectionTimeline />
       <Hero />
+      <SessionSignal />
       <div className="flex flex-col">
 
         {/* ── Context ── */}
         <Overview />
         <BriefChallenge />
-        <MarketContext />
-        <UserPersonas />
+        <CompetitiveInspiration />
 
         {/* ── Research ── */}
         <AuditAndMethod />
-        <UserResearch />
-        <CurrentStateProblems />
-        <CompetitiveLandscape />
-        <CompetitiveInspiration />
 
         {/* ── Synthesis ── */}
         <UserInsights />
-        <JobsToBeDone />
         <StrategicOpportunity />
-        <CardSorting />
         <InteractionClarityTerminology />
 
         {/* ── Framework ── */}
         <PromiseBehaviorMatrix />
         <ThreeModes />
-        <ModeDecisions />
 
         {/* ── Design ── */}
         <RedesignDirection />
@@ -195,7 +189,7 @@ export default function Home() {
             modeTitle: "Layer 1: NAVIGATION",
             subtitle: "Purpose-Driven Hubs",
             microlabel: "Action Hierarchy",
-            intro: "The navigation layer replaces 'random' feature clusters with five intent-based hubs. By mapping Dressing Intent to specific tabs (Explore, Search, Studio, Inbox, Profile), we reduce cognitive load and simplify the 'Consumption-to-Creation' loop.",
+            intro: "The navigation layer replaces competing feature clusters with five intent-based hubs. By mapping each tab to a clear purpose (Home, Explore, Canvas, Inbox, Profile), the first screen has fewer competing demands.",
             screens: mode1Screens,
             flowSteps: ["Audit CTAs", "Clarify tab purpose", "Cluster hub jobs", "Derive destinations"],
           }}
@@ -221,15 +215,8 @@ export default function Home() {
         />
 
         {/* ── System & Validation ── */}
-        <Iterations />
-        <DesignSystem />
         <BrandPreservation />
-        <VideoAndPrototype />
-        <ProblemEvolution />
-        <Validation />
-        <ImpactMetrics />
         <Monetization />
-        <Constraints />
 
         {/* ── Closing ── */}
         <Reflection />
