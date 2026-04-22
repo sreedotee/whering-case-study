@@ -7,7 +7,7 @@ const interactionPatterns = [
   {
     screen: "Home",
     primaryJob: "Browse inspiration from creators and outfits",
-    clarification: "The post is the primary object, not the creator. Styling is a secondary action, not the default.",
+    clarification: "The post is the primary object, not the creator. Styling is secondary.",
   },
   {
     screen: "Outfit Detail",
@@ -17,12 +17,12 @@ const interactionPatterns = [
   {
     screen: "Canvas",
     primaryJob: "Put together an outfit. Save it.",
-    clarification: "This is the core game. Make it feel like play — tactile, drag-and-drop — not a hidden control panel.",
+    clarification: "Make it tactile and drag-and-drop, not a hidden control panel.",
   },
   {
     screen: "Profile",
     primaryJob: "Items, outfits, collections, stats, calendar, and planning in one place.",
-    clarification: "Stats are here because reflection belongs in one place, not scattered across tabs.",
+    clarification: "Stats belong here because reflection belongs in one place.",
   },
 ];
 
