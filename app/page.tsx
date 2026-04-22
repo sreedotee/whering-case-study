@@ -8,48 +8,35 @@ import Footer from "@/components/Footer";
 
 const load = (path: string) => dynamic(() => import(`@/components/sections/${path}`), { loading: () => null });
 
-// Context
-const Overview              = load("Overview");
-const BriefChallenge        = load("BriefChallenge");
-const MarketContext         = load("MarketContext");
-const UserPersonas          = load("UserPersonas");
-
-// Research
-const AuditAndMethod        = load("AuditAndMethod");
-const UserResearch          = load("UserResearch");
-const CurrentStateProblems  = load("CurrentStateProblems");
-const CompetitiveLandscape  = load("CompetitiveLandscape");
+const Overview = load("Overview");
+const BriefChallenge = load("BriefChallenge");
+const MarketContext = load("MarketContext");
+const UserPersonas = load("UserPersonas");
+const AuditAndMethod = load("AuditAndMethod");
+const UserResearch = load("UserResearch");
+const CurrentStateProblems = load("CurrentStateProblems");
+const CompetitiveLandscape = load("CompetitiveLandscape");
 const CompetitiveInspiration = load("CompetitiveInspiration");
-
-// Synthesis
-const UserInsights          = load("UserInsights");
-const JobsToBeDone          = load("JobsToBeDone");
-const StrategicOpportunity  = load("StrategicOpportunity");
-const CardSorting           = load("CardSorting");
+const UserInsights = load("UserInsights");
+const JobsToBeDone = load("JobsToBeDone");
+const StrategicOpportunity = load("StrategicOpportunity");
+const CardSorting = load("CardSorting");
 const InteractionClarityTerminology = load("InteractionClarityTerminology");
-
-// Framework
-const PromiseBehaviorMatrix = load("PromiseBehaviorMatrix");
-const ThreeModes            = load("ThreeModes");
-const ModeDecisions         = load("ModeDecisions");
-
-// Design
-const DesignLanguage        = load("DesignLanguage");
+const ModeDecisions = load("ModeDecisions");
+const DesignLanguage = load("DesignLanguage");
 const InformationArchitecture = load("InformationArchitecture");
-const ProductPrinciples     = load("ProductPrinciples");
-const ModeScreens           = dynamic(() => import("@/components/sections/ModeScreens"), { loading: () => null });
-
-// System & Validation
-const Iterations            = load("Iterations");
-const DesignSystem          = load("DesignSystem");
-const BrandPreservation     = load("BrandPreservation");
-const VideoAndPrototype     = load("VideoAndPrototype");
-const ProblemEvolution      = load("ProblemEvolution");
-const Validation            = load("Validation");
-const ImpactMetrics         = load("ImpactMetrics");
-const Monetization          = load("Monetization");
-const Constraints           = load("Constraints");
-const Reflection            = load("Reflection");
+const ProductPrinciples = load("ProductPrinciples");
+const ModeScreens = dynamic(() => import("@/components/sections/ModeScreens"), { loading: () => null });
+const Iterations = load("Iterations");
+const DesignSystem = load("DesignSystem");
+const BrandPreservation = load("BrandPreservation");
+const VideoAndPrototype = load("VideoAndPrototype");
+const ProblemEvolution = load("ProblemEvolution");
+const Validation = load("Validation");
+const ImpactMetrics = load("ImpactMetrics");
+const Monetization = load("Monetization");
+const Constraints = load("Constraints");
+const Reflection = load("Reflection");
 
 export default function Home() {
   const mode1Screens = [
@@ -158,36 +145,24 @@ export default function Home() {
       <Hero />
       <SessionSignal />
       <div className="flex flex-col">
-
-        {/* ── Context ── */}
         <Overview />
         <BriefChallenge />
         <CompetitiveInspiration />
-
-        {/* ── Research ── */}
         <AuditAndMethod />
-
-        {/* ── Synthesis ── */}
         <UserInsights />
         <StrategicOpportunity />
         <InteractionClarityTerminology />
-
-        {/* ── Framework ── */}
-        <PromiseBehaviorMatrix />
-        <ThreeModes />
-
-        {/* ── Design ── */}
         <DesignLanguage />
         <InformationArchitecture />
         <ProductPrinciples />
-
         <div id="designs" />
         <ModeScreens
           mode1Data={{
             modeTitle: "Layer 1: NAVIGATION",
             subtitle: "Purpose-Driven Hubs",
             microlabel: "Action Hierarchy",
-            intro: "The navigation layer replaces competing feature clusters with five intent-based hubs. By mapping each tab to a clear purpose (Home, Explore, Canvas, Inbox, Profile), the first screen has fewer competing demands.",
+            intro:
+              "The navigation layer replaces competing feature clusters with five intent-based hubs. By mapping each tab to a clear purpose (Home, Explore, Canvas, Inbox, Profile), the first screen has fewer competing demands.",
             screens: mode1Screens,
             flowSteps: ["Audit CTAs", "Clarify tab purpose", "Cluster hub jobs", "Derive destinations"],
           }}
@@ -195,7 +170,8 @@ export default function Home() {
             modeTitle: "Layer 2: DISCOVERY LOOP",
             subtitle: "Creator to Wardrobe",
             microlabel: "Creator to Wardrobe",
-            intro: "The discovery layer makes inspiration modular. Creators lead to outfits, outfits expose items, items move into try-on remixing, and saved context feeds calendar planning.",
+            intro:
+              "The discovery layer makes inspiration modular. Creators lead to outfits, outfits expose items, items move into try-on remixing, and saved context feeds calendar planning.",
             screens: mode2Screens,
             feature: {
               icon: "sparkles",
@@ -207,16 +183,13 @@ export default function Home() {
             modeTitle: "Layer 3: DECISION MODEL",
             subtitle: "Logic-Based Redesign",
             microlabel: "Matrix to Structure",
-            intro: "The decision model validates product depth by segregating daily Dressing Intent from long-term Management. By relocating low-frequency stats and tools to the Profile 'Identity' hub, the surface remains clean without losing product power.",
+            intro:
+              "The decision model validates product depth by segregating daily Dressing Intent from long-term Management. By relocating low-frequency stats and tools to the Profile 'Identity' hub, the surface remains clean without losing product power.",
             screens: mode3Screens,
           }}
         />
-
-        {/* ── System & Validation ── */}
         <BrandPreservation />
         <Monetization />
-
-        {/* ── Closing ── */}
         <Reflection />
       </div>
       <Footer />
