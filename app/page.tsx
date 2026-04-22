@@ -21,6 +21,7 @@ const JobsToBeDone = load("JobsToBeDone");
 const StrategicOpportunity = load("StrategicOpportunity");
 const CardSorting = load("CardSorting");
 const InteractionClarityTerminology = load("InteractionClarityTerminology");
+const PromiseBehaviorMatrix = load("PromiseBehaviorMatrix");
 const ModeDecisions = load("ModeDecisions");
 const DesignLanguage = load("DesignLanguage");
 const InformationArchitecture = load("InformationArchitecture");
@@ -50,6 +51,7 @@ export default function Home() {
         <UserInsights />
         <StrategicOpportunity />
         <InteractionClarityTerminology />
+        <PromiseBehaviorMatrix />
         <DesignLanguage />
         <InformationArchitecture />
         <ProductPrinciples />
