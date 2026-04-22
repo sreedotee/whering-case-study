@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const FIGMA_URL = "#";
+const FIGMA_URL = "https://whering-prototype-theta.vercel.app/";
 
 const stats = [
   { label: "Role", value: "Product Designer" },
@@ -86,7 +86,9 @@ export default function Hero() {
                   Use Prototype
                 </a>
                 <a
-                  href="#overview"
+                  href="https://whering-prototype-theta.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="cursor-pointer border border-[#E8E5E6] bg-white px-8 py-3.5 rounded-full text-[15px] font-bold text-[#1F1F1F] no-underline transition-all hover:border-[#1F1F1F] shadow-sm"
                 >
                   Read Case Study
@@ -133,7 +135,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <p className="mt-6 text-center text-[10px] font-bold uppercase tracking-[0.2em] text-[#6B6B6B] group-hover:text-[#3D2B4C] transition-colors">
-                  Open Interactive Figma
+                  Open Prototype
                 </p>
               </motion.a>
             </motion.div>
