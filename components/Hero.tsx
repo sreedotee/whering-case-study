@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const FIGMA_URL = "https://whering-prototype-theta.vercel.app/";
@@ -109,12 +108,10 @@ export default function Hero() {
                 <div className="absolute inset-x-10 bottom-0 h-12 rounded-full bg-[#3D2B4C]/20 blur-3xl opacity-60 group-hover:opacity-100 transition-opacity" />
                 <div className="relative transition-transform duration-500 group-hover:-translate-y-2">
                   <div className="relative h-[480px] w-[240px] overflow-hidden rounded-[36px] border-[6px] border-[#2A1E36] bg-[#3D2B4C] shadow-[0_32px_64px_rgba(0,0,0,0.2)]">
-                    <Image
-                      src="/images/placeholder-iphone.svg"
-                      alt="Project splash screen mockup"
-                      fill
-                      priority
-                      className="object-cover"
+                    <iframe
+                      src={FIGMA_URL}
+                      title="Prototype preview"
+                      className="absolute inset-0 h-full w-full border-0 pointer-events-none"
                     />
                     <div className="absolute left-1/2 top-0 z-10 h-6 w-24 -translate-x-1/2 rounded-b-[18px] bg-[#2A1E36]" />
                   </div>
