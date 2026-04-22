@@ -19,7 +19,7 @@ export default function Hero() {
         <div 
           className="rounded-[32px] relative overflow-hidden border border-black/5 shadow-sm p-8 md:p-16 lg:p-24"
           style={{ 
-            backgroundImage: "linear-gradient(114.58deg, #FFF2C6 -1.34%, rgba(255, 229, 153, 0.56) 24.05%, #F7F7F7 74.82%)" 
+            backgroundImage: "linear-gradient(114.58deg, #E8FFD6 -1.34%, rgba(197, 255, 80, 0.52) 24.05%, #F7F7F7 74.82%)" 
           }}
         >
           <div className="grid items-center gap-12 lg:grid-cols-[1fr_320px] lg:gap-16 relative z-10">
