@@ -82,7 +82,7 @@ export default function AuditAndMethod() {
           viewport={{ once: true }}
           className="mt-10"
         >
-          <SectionHeader number="03" title="Annotated Evidence" subtitle="Callouts from the existing product" tight />
+          <SectionHeader number="03" title="Audit Findings" subtitle="Callouts from the existing product" tight />
           <img
             src="/assets/images/5-competing-actions-crop.png"
             alt="Annotated product evidence"
