@@ -5,14 +5,14 @@ import SectionHeader from "../SectionHeader";
 
 const interactionPatterns = [
   {
-    screen: "Home",
-    primaryJob: "Browse inspiration from creators and outfits",
-    clarification: "The post is the primary object, not the creator. Styling is secondary.",
+    screen: "Discover",
+    primaryJob: "Passive discovery and consumption.",
+    clarification: "The feed is for browsing inspiration. The object is the post, creator, or outfit.",
   },
   {
-    screen: "Outfit Detail",
-    primaryJob: "See what items are in this outfit. Decide if you want to style it.",
-    clarification: "Don't auto-open the canvas. Let the user choose whether to explore or style.",
+    screen: "Search",
+    primaryJob: "Active discovery.",
+    clarification: "This tab is for intentional searching, filtering, and finding something specific.",
   },
   {
     screen: "Canvas",
@@ -33,7 +33,7 @@ export default function InteractionClarityTerminology() {
         <SectionHeader
           number="05"
           title="One Primary Job Per Screen"
-          subtitle="Each tab answers a different question"
+          subtitle="Discover is passive. Search is active."
         />
 
         <div className="divide-y divide-black/8 mb-10">
