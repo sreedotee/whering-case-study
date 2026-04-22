@@ -5,17 +5,51 @@ import Hero from "@/components/Hero";
 import SectionTimeline from "@/components/SectionTimeline";
 import Footer from "@/components/Footer";
 
-// Lazy load heavy sections
-const Overview = dynamic(() => import("@/components/sections/Overview"), { loading: () => null });
-const AuditAndMethod = dynamic(() => import("@/components/sections/AuditAndMethod"), { loading: () => null });
-const CurrentStateProblems = dynamic(() => import("@/components/sections/CurrentStateProblems"), { loading: () => null });
-const CompetitiveInspiration = dynamic(() => import("@/components/sections/CompetitiveInspiration"), { loading: () => null });
-const InteractionClarityTerminology = dynamic(() => import("@/components/sections/InteractionClarityTerminology"), { loading: () => null });
-const PromiseBehaviorMatrix = dynamic(() => import("@/components/sections/PromiseBehaviorMatrix"), { loading: () => null });
-const RedesignDirection = dynamic(() => import("@/components/sections/RedesignDirection"), { loading: () => null });
-const ProductPrinciples = dynamic(() => import("@/components/sections/ProductPrinciples"), { loading: () => null });
-const ModeScreens = dynamic(() => import("@/components/sections/ModeScreens"), { loading: () => null });
-const Reflection = dynamic(() => import("@/components/sections/Reflection"), { loading: () => null });
+const load = (path: string) => dynamic(() => import(`@/components/sections/${path}`), { loading: () => null });
+
+// Context
+const Overview              = load("Overview");
+const BriefChallenge        = load("BriefChallenge");
+const MarketContext         = load("MarketContext");
+const UserPersonas          = load("UserPersonas");
+
+// Research
+const AuditAndMethod        = load("AuditAndMethod");
+const UserResearch          = load("UserResearch");
+const CurrentStateProblems  = load("CurrentStateProblems");
+const CompetitiveLandscape  = load("CompetitiveLandscape");
+const CompetitiveInspiration = load("CompetitiveInspiration");
+
+// Synthesis
+const UserInsights          = load("UserInsights");
+const JobsToBeDone          = load("JobsToBeDone");
+const StrategicOpportunity  = load("StrategicOpportunity");
+const CardSorting           = load("CardSorting");
+const InteractionClarityTerminology = load("InteractionClarityTerminology");
+
+// Framework
+const PromiseBehaviorMatrix = load("PromiseBehaviorMatrix");
+const ThreeModes            = load("ThreeModes");
+const ModeDecisions         = load("ModeDecisions");
+
+// Design
+const RedesignDirection     = load("RedesignDirection");
+const DesignLanguage        = load("DesignLanguage");
+const InformationArchitecture = load("InformationArchitecture");
+const ProductPrinciples     = load("ProductPrinciples");
+const ModeScreens           = dynamic(() => import("@/components/sections/ModeScreens"), { loading: () => null });
+
+// System & Validation
+const Iterations            = load("Iterations");
+const DesignSystem          = load("DesignSystem");
+const BrandPreservation     = load("BrandPreservation");
+const VideoAndPrototype     = load("VideoAndPrototype");
+const ProblemEvolution      = load("ProblemEvolution");
+const Validation            = load("Validation");
+const ImpactMetrics         = load("ImpactMetrics");
+const Monetization          = load("Monetization");
+const Constraints           = load("Constraints");
+const Reflection            = load("Reflection");
 
 export default function Home() {
   const mode1Screens = [
@@ -123,13 +157,36 @@ export default function Home() {
       <SectionTimeline />
       <Hero />
       <div className="flex flex-col">
+
+        {/* ── Context ── */}
         <Overview />
+        <BriefChallenge />
+        <MarketContext />
+        <UserPersonas />
+
+        {/* ── Research ── */}
         <AuditAndMethod />
+        <UserResearch />
         <CurrentStateProblems />
+        <CompetitiveLandscape />
         <CompetitiveInspiration />
+
+        {/* ── Synthesis ── */}
+        <UserInsights />
+        <JobsToBeDone />
+        <StrategicOpportunity />
+        <CardSorting />
         <InteractionClarityTerminology />
+
+        {/* ── Framework ── */}
         <PromiseBehaviorMatrix />
+        <ThreeModes />
+        <ModeDecisions />
+
+        {/* ── Design ── */}
         <RedesignDirection />
+        <DesignLanguage />
+        <InformationArchitecture />
         <ProductPrinciples />
 
         <div id="designs" />
@@ -162,6 +219,19 @@ export default function Home() {
             screens: mode3Screens,
           }}
         />
+
+        {/* ── System & Validation ── */}
+        <Iterations />
+        <DesignSystem />
+        <BrandPreservation />
+        <VideoAndPrototype />
+        <ProblemEvolution />
+        <Validation />
+        <ImpactMetrics />
+        <Monetization />
+        <Constraints />
+
+        {/* ── Closing ── */}
         <Reflection />
       </div>
       <Footer />
