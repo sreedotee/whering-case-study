@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import SessionSignal from "@/components/SessionSignal";
 import SectionTimeline from "@/components/SectionTimeline";
 import Footer from "@/components/Footer";
+import SectionHeader from "@/components/SectionHeader";
 
 const load = (path: string) => dynamic(() => import(`@/components/sections/${path}`), { loading: () => null });
 

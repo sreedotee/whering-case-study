@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 
 const defaultNotes = [
@@ -56,11 +57,15 @@ export default function AnnotationDropPage() {
               onChange={(e) => handleFile(e.target.files?.[0])}
             />
             {preview ? (
-              <img
-                src={preview}
-                alt="Uploaded annotation preview"
-                className="max-h-[760px] w-full rounded-[18px] object-contain"
-              />
+              <div className="relative h-full w-full min-h-[420px]">
+                <Image
+                  src={preview}
+                  alt="Uploaded annotation preview"
+                  fill
+                  unoptimized
+                  className="rounded-[18px] object-contain"
+                />
+              </div>
             ) : (
               <>
                 <div className="rounded-full bg-[#1F1F1F] px-4 py-2 text-sm font-medium text-white">
